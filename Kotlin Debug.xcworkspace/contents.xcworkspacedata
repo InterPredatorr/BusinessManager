@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Kotlin Debug">
+      <Group
+         location = "group:composeApp/src/commonMain"
+         name = "commonMain">
+         <Group
+            location = "group:resources"
+            name = "resources">
+            <Group
+               location = "group:images"
+               name = "images">
+            </Group>
+            <FileRef
+               location = "group:compose-multiplatform.xml">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:kotlin"
+            name = "kotlin">
+            <Group
+               location = "group:app"
+               name = "app">
+               <Group
+                  location = "group:di"
+                  name = "di">
+                  <FileRef
+                     location = "group:AppModule.kt">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:data"
+                  name = "data">
+                  <Group
+                     location = "group:cache"
+                     name = "cache">
+                     <FileRef
+                        location = "group:CacheService.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:imagePicker"
+                     name = "imagePicker">
+                     <FileRef
+                        location = "group:FileUtils.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:network"
+                     name = "network">
+                     <FileRef
+                        location = "group:NetworkResult.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:NetworkApi.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:FirebaseNetworkApi.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:user"
+                     name = "user">
+                     <FileRef
+                        location = "group:GetUserApi.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UserHistoryEntity.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UserHistoryApi.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UserCacheService.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UserEntity.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:local"
+                     name = "local">
+                     <FileRef
+                        location = "group:UserDatabaseDriverFactory.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:work"
+                     name = "work">
+                     <FileRef
+                        location = "group:WorkAssignApi.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:CurrentWorksApi.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:WorkEntity.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:CurrentWorkFirebaseApi.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:rooms"
+                     name = "rooms">
+                     <FileRef
+                        location = "group:RoomsProviderApi.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:login"
+                     name = "login">
+                     <FileRef
+                        location = "group:LoginApiFirebaseImpl.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:LoginApi.kt">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:domain"
+                  name = "domain">
+                  <Group
+                     location = "group:user"
+                     name = "user">
+                     <FileRef
+                        location = "group:UserProviderUseCase.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UserMapper.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:WorkHistory.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UserEntityToUserMapper.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:WorkerHistoryUseCase.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:WorksUseCase.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:User.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:rooms"
+                     name = "rooms">
+                     <FileRef
+                        location = "group:RoomsEntityToRoomsMapper.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:RoomsProviderUseCase.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:login"
+                     name = "login">
+                     <FileRef
+                        location = "group:LoginUseCase.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:LoginRepository.kt">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:presentation"
+                  name = "presentation">
+                  <Group
+                     location = "group:tabs"
+                     name = "tabs">
+                     <FileRef
+                        location = "group:CurrentTabState.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Tabs.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:splash"
+                     name = "splash">
+                     <FileRef
+                        location = "group:SplashViewModel.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SplashView.kt">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:Platform.kt">
+                  </FileRef>
+                  <Group
+                     location = "group:usersList"
+                     name = "usersList">
+                     <FileRef
+                        location = "group:UserCardView.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UsersListViewModel.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UserSelectableView.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:WorkerHistoryScreen.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UserProfileScreen.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UsersListScreen.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:WorkerHistoryCardView.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UsersListState.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:WorkerHistoryViewModel.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:components"
+                     name = "components">
+                     <Group
+                        location = "group:Loading"
+                        name = "Loading">
+                        <FileRef
+                           location = "group:LoadingState.kt">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LoadingView.kt">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:Dialogs.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:theme"
+                     name = "theme">
+                     <FileRef
+                        location = "group:Theme.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:rooms"
+                     name = "rooms">
+                     <FileRef
+                        location = "group:RoomDetailScreen.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:WorkDetailScreen.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:RoomCardView.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:RoomsScreen.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:WorkerChooserScreen.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:RoomViewModel.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:worker"
+                     name = "worker">
+                     <FileRef
+                        location = "group:WorkerScreen.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:WorkerScreenViewModel.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:addworker"
+                     name = "addworker">
+                     <FileRef
+                        location = "group:AddWorkerScreen.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AddWorkerViewModel.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:main"
+                     name = "main">
+                     <FileRef
+                        location = "group:App.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:login"
+                     name = "login">
+                     <FileRef
+                        location = "group:Components.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:LoginViewModel.kt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:LoginScreen.kt">
+                     </FileRef>
+                  </Group>
+               </Group>
+            </Group>
+            <Group
+               location = "group:extensions"
+               name = "extensions">
+               <FileRef
+                  location = "group:Extensions.kt">
+               </FileRef>
+               <FileRef
+                  location = "group:DateTime.kt">
+               </FileRef>
+               <FileRef
+                  location = "group:ConstHelper.kt">
+               </FileRef>
+               <FileRef
+                  location = "group:Mapper.kt">
+               </FileRef>
+               <FileRef
+                  location = "group:Timer.kt">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:sqldelight"
+            name = "sqldelight">
+            <Group
+               location = "group:database"
+               name = "database">
+               <FileRef
+                  location = "group:1.db">
+               </FileRef>
+               <FileRef
+                  location = "group:users.sq">
+               </FileRef>
+               <FileRef
+                  location = "group:1.sqm">
+               </FileRef>
+               <FileRef
+                  location = "group:2.sqm">
+               </FileRef>
+               <FileRef
+                  location = "group:3.sqm">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+      <Group
+         location = "group:composeApp/src/iosMain"
+         name = "iosMain">
+         <Group
+            location = "group:kotlin"
+            name = "kotlin">
+            <Group
+               location = "group:app"
+               name = "app">
+               <Group
+                  location = "group:di"
+                  name = "di">
+                  <FileRef
+                     location = "group:AppModule.kt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:KoinHelper.kt">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:data"
+                  name = "data">
+                  <Group
+                     location = "group:imagePicker"
+                     name = "imagePicker">
+                     <FileRef
+                        location = "group:FileUtils.kt">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:local"
+                     name = "local">
+                     <FileRef
+                        location = "group:UserDatabaseDriverFactory.kt">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:presentation"
+                  name = "presentation">
+                  <FileRef
+                     location = "group:MainViewController.kt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Platform.ios.kt">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:extensions"
+               name = "extensions">
+               <FileRef
+                  location = "group:DateTime.kt">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+   </Group>
+   <FileRef
+      location = "container:iosApp/iosApp.xcodeproj">
+   </FileRef>
+</Workspace>

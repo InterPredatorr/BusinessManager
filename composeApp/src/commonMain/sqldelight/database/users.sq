@@ -1,0 +1,33 @@
+-- app/data/user/UserEntity.sq
+
+-- Table Definition
+CREATE TABLE IF NOT EXISTS user_entity (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    uid TEXT NOT NULL,
+    name TEXT NOT NULL,
+    address TEXT DEFAULT NULL,
+    phone TEXT DEFAULT NULL,
+    active INTEGER DEFAULT 0,
+    avatar TEXT DEFAULT NULL,
+    password TEXT DEFAULT NULL,
+    age INTEGER NOT NULL,
+    role TEXT NOT NULL,
+    startingDate TEXT NOT NULL
+);
+
+insert:
+INSERT OR REPLACE INTO user_entity (id, uid, name,address, phone, active, avatar, password, age, role, startingDate)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+getAll:
+SELECT * FROM user_entity;
+
+getById:
+SELECT * FROM user_entity WHERE id = ?;
+
+deleteByUid:
+DELETE FROM user_entity WHERE uid = ?;
+
+deleteAll:
+DELETE FROM user_entity;
+

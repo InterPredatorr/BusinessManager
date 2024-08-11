@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "783054324964",
+    "firebase_url": "https://businessmanager-d9303-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "businessmanager-d9303",
+    "storage_bucket": "businessmanager-d9303.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783054324964:android:d06a7fc3607bffb3bcd8f1",
+        "android_client_info": {
+          "package_name": "app.business.manager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_D5t9nrABZEYXXQX6mg46RPzPVAo0X3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

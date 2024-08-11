@@ -1,0 +1,1137 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
+		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
+		0D283CCD2B657FC100718A7C /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 0D283CCC2B657FC100718A7C /* FirebaseMessaging */; };
+		0D2F80D62B36EFDC00CB39BF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0D2F80D52B36EFDC00CB39BF /* FirebaseFirestore */; };
+		0D2F80D82B36EFE000CB39BF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0D2F80D72B36EFE000CB39BF /* FirebaseAuth */; };
+		0D9F279B2B50341300F02337 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 0D9F279A2B50341300F02337 /* FirebaseFunctions */; };
+		0D9F279D2B50342200F02337 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0D9F279C2B50342200F02337 /* FirebaseDatabase */; };
+		0D9F27A12B5038C900F02337 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0D9F27A02B5038C900F02337 /* FirebaseAnalytics */; };
+		0DA5095E2B6B04340056B343 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0DA5095D2B6B04340056B343 /* FirebaseStorage */; };
+		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
+		667BAE922C47994E00C960EF /* CacheService.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE182C47994E00C960EF /* CacheService.kt */; };
+		667BAE952C47994E00C960EF /* LoginApi.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE1E2C47994E00C960EF /* LoginApi.kt */; };
+		667BAE962C47994E00C960EF /* LoginApiFirebaseImpl.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE1F2C47994E00C960EF /* LoginApiFirebaseImpl.kt */; };
+		667BAE972C47994E00C960EF /* FirebaseNetworkApi.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE212C47994E00C960EF /* FirebaseNetworkApi.kt */; };
+		667BAE982C47994E00C960EF /* NetworkApi.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE222C47994E00C960EF /* NetworkApi.kt */; };
+		667BAE992C47994E00C960EF /* NetworkResult.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE232C47994E00C960EF /* NetworkResult.kt */; };
+		667BAE9A2C47994E00C960EF /* RoomsProviderApi.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE252C47994E00C960EF /* RoomsProviderApi.kt */; };
+		667BAE9B2C47994E00C960EF /* GetUserApi.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE272C47994E00C960EF /* GetUserApi.kt */; };
+		667BAE9C2C47994E00C960EF /* UserCacheService.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE282C47994E00C960EF /* UserCacheService.kt */; };
+		667BAE9D2C47994E00C960EF /* UserEntity.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE292C47994E00C960EF /* UserEntity.kt */; };
+		667BAE9E2C47994E00C960EF /* UserHistoryApi.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE2A2C47994E00C960EF /* UserHistoryApi.kt */; };
+		667BAE9F2C47994E00C960EF /* UserHistoryEntity.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE2B2C47994E00C960EF /* UserHistoryEntity.kt */; };
+		667BAEA02C47994E00C960EF /* CurrentWorkFirebaseApi.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE2D2C47994E00C960EF /* CurrentWorkFirebaseApi.kt */; };
+		667BAEA12C47994E00C960EF /* CurrentWorksApi.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE2E2C47994E00C960EF /* CurrentWorksApi.kt */; };
+		667BAEA22C47994E00C960EF /* WorkAssignApi.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE2F2C47994E00C960EF /* WorkAssignApi.kt */; };
+		667BAEA32C47994E00C960EF /* WorkEntity.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE302C47994E00C960EF /* WorkEntity.kt */; };
+		667BAEA42C47994E00C960EF /* AppModule.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE332C47994E00C960EF /* AppModule.kt */; };
+		667BAEA52C47994E00C960EF /* LoginRepository.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE352C47994E00C960EF /* LoginRepository.kt */; };
+		667BAEA62C47994E00C960EF /* LoginUseCase.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE362C47994E00C960EF /* LoginUseCase.kt */; };
+		667BAEA72C47994E00C960EF /* RoomsEntityToRoomsMapper.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE382C47994E00C960EF /* RoomsEntityToRoomsMapper.kt */; };
+		667BAEA82C47994E00C960EF /* RoomsProviderUseCase.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE392C47994E00C960EF /* RoomsProviderUseCase.kt */; };
+		667BAEA92C47994E00C960EF /* User.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE3B2C47994E00C960EF /* User.kt */; };
+		667BAEAA2C47994E00C960EF /* UserEntityToUserMapper.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE3C2C47994E00C960EF /* UserEntityToUserMapper.kt */; };
+		667BAEAB2C47994E00C960EF /* UserMapper.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE3D2C47994E00C960EF /* UserMapper.kt */; };
+		667BAEAC2C47994E00C960EF /* UserProviderUseCase.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE3E2C47994E00C960EF /* UserProviderUseCase.kt */; };
+		667BAEAD2C47994E00C960EF /* WorkerHistoryUseCase.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE3F2C47994E00C960EF /* WorkerHistoryUseCase.kt */; };
+		667BAEAE2C47994E00C960EF /* WorkHistory.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE402C47994E00C960EF /* WorkHistory.kt */; };
+		667BAEAF2C47994E00C960EF /* WorksUseCase.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE412C47994E00C960EF /* WorksUseCase.kt */; };
+		667BAEB02C47994E00C960EF /* AddWorkerScreen.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE442C47994E00C960EF /* AddWorkerScreen.kt */; };
+		667BAEB12C47994E00C960EF /* AddWorkerViewModel.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE452C47994E00C960EF /* AddWorkerViewModel.kt */; };
+		667BAEB22C47994E00C960EF /* LoadingState.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE472C47994E00C960EF /* LoadingState.kt */; };
+		667BAEB32C47994E00C960EF /* LoadingView.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE482C47994E00C960EF /* LoadingView.kt */; };
+		667BAEB42C47994E00C960EF /* Dialogs.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE4A2C47994E00C960EF /* Dialogs.kt */; };
+		667BAEB52C47994E00C960EF /* Components.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE4C2C47994E00C960EF /* Components.kt */; };
+		667BAEB62C47994E00C960EF /* LoginScreen.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE4D2C47994E00C960EF /* LoginScreen.kt */; };
+		667BAEB72C47994E00C960EF /* LoginViewModel.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE4E2C47994E00C960EF /* LoginViewModel.kt */; };
+		667BAEB82C47994E00C960EF /* App.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE502C47994E00C960EF /* App.kt */; };
+		667BAEB92C47994E00C960EF /* RoomCardView.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE522C47994E00C960EF /* RoomCardView.kt */; };
+		667BAEBA2C47994E00C960EF /* RoomDetailScreen.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE532C47994E00C960EF /* RoomDetailScreen.kt */; };
+		667BAEBB2C47994E00C960EF /* RoomsScreen.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE542C47994E00C960EF /* RoomsScreen.kt */; };
+		667BAEBC2C47994E00C960EF /* RoomViewModel.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE552C47994E00C960EF /* RoomViewModel.kt */; };
+		667BAEBD2C47994E00C960EF /* WorkDetailScreen.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE562C47994E00C960EF /* WorkDetailScreen.kt */; };
+		667BAEBE2C47994E00C960EF /* WorkerChooserScreen.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE572C47994E00C960EF /* WorkerChooserScreen.kt */; };
+		667BAEBF2C47994E00C960EF /* SplashView.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE592C47994E00C960EF /* SplashView.kt */; };
+		667BAEC02C47994E00C960EF /* SplashViewModel.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE5A2C47994E00C960EF /* SplashViewModel.kt */; };
+		667BAEC12C47994E00C960EF /* CurrentTabState.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE5C2C47994E00C960EF /* CurrentTabState.kt */; };
+		667BAEC22C47994E00C960EF /* Tabs.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE5D2C47994E00C960EF /* Tabs.kt */; };
+		667BAEC32C47994E00C960EF /* Theme.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE5F2C47994E00C960EF /* Theme.kt */; };
+		667BAEC42C47994E00C960EF /* UserCardView.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE612C47994E00C960EF /* UserCardView.kt */; };
+		667BAEC52C47994E00C960EF /* UserProfileScreen.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE622C47994E00C960EF /* UserProfileScreen.kt */; };
+		667BAEC62C47994E00C960EF /* UserSelectableView.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE632C47994E00C960EF /* UserSelectableView.kt */; };
+		667BAEC72C47994E00C960EF /* UsersListScreen.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE642C47994E00C960EF /* UsersListScreen.kt */; };
+		667BAEC82C47994E00C960EF /* UsersListState.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE652C47994E00C960EF /* UsersListState.kt */; };
+		667BAEC92C47994E00C960EF /* UsersListViewModel.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE662C47994E00C960EF /* UsersListViewModel.kt */; };
+		667BAECA2C47994E00C960EF /* WorkerHistoryCardView.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE672C47994E00C960EF /* WorkerHistoryCardView.kt */; };
+		667BAECB2C47994E00C960EF /* WorkerHistoryScreen.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE682C47994E00C960EF /* WorkerHistoryScreen.kt */; };
+		667BAECC2C47994E00C960EF /* WorkerHistoryViewModel.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE692C47994E00C960EF /* WorkerHistoryViewModel.kt */; };
+		667BAECD2C47994E00C960EF /* WorkerScreen.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE6B2C47994E00C960EF /* WorkerScreen.kt */; };
+		667BAECE2C47994E00C960EF /* WorkerScreenViewModel.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE6C2C47994E00C960EF /* WorkerScreenViewModel.kt */; };
+		667BAECF2C47994E00C960EF /* Platform.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE6E2C47994E00C960EF /* Platform.kt */; };
+		667BAED02C47994E00C960EF /* ConstHelper.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE712C47994E00C960EF /* ConstHelper.kt */; };
+		667BAED22C47994E00C960EF /* Extensions.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE732C47994E00C960EF /* Extensions.kt */; };
+		667BAED32C47994E00C960EF /* Mapper.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE742C47994E00C960EF /* Mapper.kt */; };
+		667BAED42C47994E00C960EF /* Timer.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE752C47994E00C960EF /* Timer.kt */; };
+		667BAED52C47994E00C960EF /* compose-multiplatform.xml in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE782C47994E00C960EF /* compose-multiplatform.xml */; };
+		667BAED62C47994E00C960EF /* 1.db in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE7A2C47994E00C960EF /* 1.db */; };
+		667BAED72C47994E00C960EF /* 1.sqm in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE7B2C47994E00C960EF /* 1.sqm */; };
+		667BAED82C47994E00C960EF /* 2.sqm in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE7C2C47994E00C960EF /* 2.sqm */; };
+		667BAED92C47994E00C960EF /* 3.sqm in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE7D2C47994E00C960EF /* 3.sqm */; };
+		667BAEDA2C47994E00C960EF /* users.sq in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE7E2C47994E00C960EF /* users.sq */; };
+		667BAEDB2C47994E00C960EF /* FileUtils.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE822C47994E00C960EF /* FileUtils.kt */; };
+		667BAEDC2C47994E00C960EF /* UserDatabaseDriverFactory.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE842C47994E00C960EF /* UserDatabaseDriverFactory.kt */; };
+		667BAEDE2C47994E00C960EF /* KoinHelper.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE882C47994E00C960EF /* KoinHelper.kt */; };
+		667BAEDF2C47994E00C960EF /* MainViewController.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE8A2C47994E00C960EF /* MainViewController.kt */; };
+		667BAEE02C47994E00C960EF /* Platform.ios.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE8B2C47994E00C960EF /* Platform.ios.kt */; };
+		667BAEE12C47994E00C960EF /* DateTime.kt in Resources */ = {isa = PBXBuildFile; fileRef = 667BAE8E2C47994E00C960EF /* DateTime.kt */; };
+		667BAEE32C479BE200C960EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 667BAEE22C479BE200C960EF /* GoogleService-Info.plist */; };
+		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D3D5B1B2B514DA3007F578E /* iosApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iosApp.entitlements; sourceTree = "<group>"; };
+		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
+		667BAE182C47994E00C960EF /* CacheService.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CacheService.kt; sourceTree = "<group>"; };
+		667BAE1A2C47994E00C960EF /* FileUtils.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FileUtils.kt; sourceTree = "<group>"; };
+		667BAE1C2C47994E00C960EF /* UserDatabaseDriverFactory.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserDatabaseDriverFactory.kt; sourceTree = "<group>"; };
+		667BAE1E2C47994E00C960EF /* LoginApi.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LoginApi.kt; sourceTree = "<group>"; };
+		667BAE1F2C47994E00C960EF /* LoginApiFirebaseImpl.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LoginApiFirebaseImpl.kt; sourceTree = "<group>"; };
+		667BAE212C47994E00C960EF /* FirebaseNetworkApi.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FirebaseNetworkApi.kt; sourceTree = "<group>"; };
+		667BAE222C47994E00C960EF /* NetworkApi.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NetworkApi.kt; sourceTree = "<group>"; };
+		667BAE232C47994E00C960EF /* NetworkResult.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NetworkResult.kt; sourceTree = "<group>"; };
+		667BAE252C47994E00C960EF /* RoomsProviderApi.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RoomsProviderApi.kt; sourceTree = "<group>"; };
+		667BAE272C47994E00C960EF /* GetUserApi.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetUserApi.kt; sourceTree = "<group>"; };
+		667BAE282C47994E00C960EF /* UserCacheService.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserCacheService.kt; sourceTree = "<group>"; };
+		667BAE292C47994E00C960EF /* UserEntity.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserEntity.kt; sourceTree = "<group>"; };
+		667BAE2A2C47994E00C960EF /* UserHistoryApi.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserHistoryApi.kt; sourceTree = "<group>"; };
+		667BAE2B2C47994E00C960EF /* UserHistoryEntity.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserHistoryEntity.kt; sourceTree = "<group>"; };
+		667BAE2D2C47994E00C960EF /* CurrentWorkFirebaseApi.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CurrentWorkFirebaseApi.kt; sourceTree = "<group>"; };
+		667BAE2E2C47994E00C960EF /* CurrentWorksApi.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CurrentWorksApi.kt; sourceTree = "<group>"; };
+		667BAE2F2C47994E00C960EF /* WorkAssignApi.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WorkAssignApi.kt; sourceTree = "<group>"; };
+		667BAE302C47994E00C960EF /* WorkEntity.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WorkEntity.kt; sourceTree = "<group>"; };
+		667BAE332C47994E00C960EF /* AppModule.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppModule.kt; sourceTree = "<group>"; };
+		667BAE352C47994E00C960EF /* LoginRepository.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LoginRepository.kt; sourceTree = "<group>"; };
+		667BAE362C47994E00C960EF /* LoginUseCase.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LoginUseCase.kt; sourceTree = "<group>"; };
+		667BAE382C47994E00C960EF /* RoomsEntityToRoomsMapper.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RoomsEntityToRoomsMapper.kt; sourceTree = "<group>"; };
+		667BAE392C47994E00C960EF /* RoomsProviderUseCase.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RoomsProviderUseCase.kt; sourceTree = "<group>"; };
+		667BAE3B2C47994E00C960EF /* User.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = User.kt; sourceTree = "<group>"; };
+		667BAE3C2C47994E00C960EF /* UserEntityToUserMapper.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserEntityToUserMapper.kt; sourceTree = "<group>"; };
+		667BAE3D2C47994E00C960EF /* UserMapper.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserMapper.kt; sourceTree = "<group>"; };
+		667BAE3E2C47994E00C960EF /* UserProviderUseCase.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserProviderUseCase.kt; sourceTree = "<group>"; };
+		667BAE3F2C47994E00C960EF /* WorkerHistoryUseCase.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WorkerHistoryUseCase.kt; sourceTree = "<group>"; };
+		667BAE402C47994E00C960EF /* WorkHistory.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WorkHistory.kt; sourceTree = "<group>"; };
+		667BAE412C47994E00C960EF /* WorksUseCase.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WorksUseCase.kt; sourceTree = "<group>"; };
+		667BAE442C47994E00C960EF /* AddWorkerScreen.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AddWorkerScreen.kt; sourceTree = "<group>"; };
+		667BAE452C47994E00C960EF /* AddWorkerViewModel.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AddWorkerViewModel.kt; sourceTree = "<group>"; };
+		667BAE472C47994E00C960EF /* LoadingState.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LoadingState.kt; sourceTree = "<group>"; };
+		667BAE482C47994E00C960EF /* LoadingView.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LoadingView.kt; sourceTree = "<group>"; };
+		667BAE4A2C47994E00C960EF /* Dialogs.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dialogs.kt; sourceTree = "<group>"; };
+		667BAE4C2C47994E00C960EF /* Components.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Components.kt; sourceTree = "<group>"; };
+		667BAE4D2C47994E00C960EF /* LoginScreen.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LoginScreen.kt; sourceTree = "<group>"; };
+		667BAE4E2C47994E00C960EF /* LoginViewModel.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LoginViewModel.kt; sourceTree = "<group>"; };
+		667BAE502C47994E00C960EF /* App.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = App.kt; sourceTree = "<group>"; };
+		667BAE522C47994E00C960EF /* RoomCardView.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RoomCardView.kt; sourceTree = "<group>"; };
+		667BAE532C47994E00C960EF /* RoomDetailScreen.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RoomDetailScreen.kt; sourceTree = "<group>"; };
+		667BAE542C47994E00C960EF /* RoomsScreen.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RoomsScreen.kt; sourceTree = "<group>"; };
+		667BAE552C47994E00C960EF /* RoomViewModel.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RoomViewModel.kt; sourceTree = "<group>"; };
+		667BAE562C47994E00C960EF /* WorkDetailScreen.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WorkDetailScreen.kt; sourceTree = "<group>"; };
+		667BAE572C47994E00C960EF /* WorkerChooserScreen.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WorkerChooserScreen.kt; sourceTree = "<group>"; };
+		667BAE592C47994E00C960EF /* SplashView.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SplashView.kt; sourceTree = "<group>"; };
+		667BAE5A2C47994E00C960EF /* SplashViewModel.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SplashViewModel.kt; sourceTree = "<group>"; };
+		667BAE5C2C47994E00C960EF /* CurrentTabState.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CurrentTabState.kt; sourceTree = "<group>"; };
+		667BAE5D2C47994E00C960EF /* Tabs.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tabs.kt; sourceTree = "<group>"; };
+		667BAE5F2C47994E00C960EF /* Theme.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Theme.kt; sourceTree = "<group>"; };
+		667BAE612C47994E00C960EF /* UserCardView.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserCardView.kt; sourceTree = "<group>"; };
+		667BAE622C47994E00C960EF /* UserProfileScreen.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserProfileScreen.kt; sourceTree = "<group>"; };
+		667BAE632C47994E00C960EF /* UserSelectableView.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserSelectableView.kt; sourceTree = "<group>"; };
+		667BAE642C47994E00C960EF /* UsersListScreen.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UsersListScreen.kt; sourceTree = "<group>"; };
+		667BAE652C47994E00C960EF /* UsersListState.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UsersListState.kt; sourceTree = "<group>"; };
+		667BAE662C47994E00C960EF /* UsersListViewModel.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UsersListViewModel.kt; sourceTree = "<group>"; };
+		667BAE672C47994E00C960EF /* WorkerHistoryCardView.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WorkerHistoryCardView.kt; sourceTree = "<group>"; };
+		667BAE682C47994E00C960EF /* WorkerHistoryScreen.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WorkerHistoryScreen.kt; sourceTree = "<group>"; };
+		667BAE692C47994E00C960EF /* WorkerHistoryViewModel.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WorkerHistoryViewModel.kt; sourceTree = "<group>"; };
+		667BAE6B2C47994E00C960EF /* WorkerScreen.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WorkerScreen.kt; sourceTree = "<group>"; };
+		667BAE6C2C47994E00C960EF /* WorkerScreenViewModel.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WorkerScreenViewModel.kt; sourceTree = "<group>"; };
+		667BAE6E2C47994E00C960EF /* Platform.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Platform.kt; sourceTree = "<group>"; };
+		667BAE712C47994E00C960EF /* ConstHelper.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ConstHelper.kt; sourceTree = "<group>"; };
+		667BAE722C47994E00C960EF /* DateTime.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DateTime.kt; sourceTree = "<group>"; };
+		667BAE732C47994E00C960EF /* Extensions.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Extensions.kt; sourceTree = "<group>"; };
+		667BAE742C47994E00C960EF /* Mapper.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mapper.kt; sourceTree = "<group>"; };
+		667BAE752C47994E00C960EF /* Timer.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Timer.kt; sourceTree = "<group>"; };
+		667BAE782C47994E00C960EF /* compose-multiplatform.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "compose-multiplatform.xml"; sourceTree = "<group>"; };
+		667BAE7A2C47994E00C960EF /* 1.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.db; sourceTree = "<group>"; };
+		667BAE7B2C47994E00C960EF /* 1.sqm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.sqm; sourceTree = "<group>"; };
+		667BAE7C2C47994E00C960EF /* 2.sqm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2.sqm; sourceTree = "<group>"; };
+		667BAE7D2C47994E00C960EF /* 3.sqm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3.sqm; sourceTree = "<group>"; };
+		667BAE7E2C47994E00C960EF /* users.sq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = users.sq; sourceTree = "<group>"; };
+		667BAE822C47994E00C960EF /* FileUtils.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FileUtils.kt; sourceTree = "<group>"; };
+		667BAE842C47994E00C960EF /* UserDatabaseDriverFactory.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserDatabaseDriverFactory.kt; sourceTree = "<group>"; };
+		667BAE872C47994E00C960EF /* AppModule.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppModule.kt; sourceTree = "<group>"; };
+		667BAE882C47994E00C960EF /* KoinHelper.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KoinHelper.kt; sourceTree = "<group>"; };
+		667BAE8A2C47994E00C960EF /* MainViewController.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MainViewController.kt; sourceTree = "<group>"; };
+		667BAE8B2C47994E00C960EF /* Platform.ios.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Platform.ios.kt; sourceTree = "<group>"; };
+		667BAE8E2C47994E00C960EF /* DateTime.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DateTime.kt; sourceTree = "<group>"; };
+		667BAEE22C479BE200C960EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7555FF7B242A565900829871 /* BusinessManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB3632DC29227652001CCB65 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D2F80D42B36EFD400CB39BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D283CCD2B657FC100718A7C /* FirebaseMessaging in Frameworks */,
+				0D9F279D2B50342200F02337 /* FirebaseDatabase in Frameworks */,
+				0D9F279B2B50341300F02337 /* FirebaseFunctions in Frameworks */,
+				0D2F80D62B36EFDC00CB39BF /* FirebaseFirestore in Frameworks */,
+				0DA5095E2B6B04340056B343 /* FirebaseStorage in Frameworks */,
+				0D9F27A12B5038C900F02337 /* FirebaseAnalytics in Frameworks */,
+				0D2F80D82B36EFE000CB39BF /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		058557D7273AAEEB004C7B11 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		42799AB246E5F90AF97AA0EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		667BAE172C47993B00C960EF /* Kotlin Debug */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE812C47994E00C960EF /* commonMain */,
+				667BAE912C47994E00C960EF /* iosMain */,
+			);
+			path = "Kotlin Debug";
+			sourceTree = "<group>";
+		};
+		667BAE192C47994E00C960EF /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE182C47994E00C960EF /* CacheService.kt */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		667BAE1B2C47994E00C960EF /* imagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE1A2C47994E00C960EF /* FileUtils.kt */,
+			);
+			path = imagePicker;
+			sourceTree = "<group>";
+		};
+		667BAE1D2C47994E00C960EF /* local */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE1C2C47994E00C960EF /* UserDatabaseDriverFactory.kt */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		667BAE202C47994E00C960EF /* login */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE1E2C47994E00C960EF /* LoginApi.kt */,
+				667BAE1F2C47994E00C960EF /* LoginApiFirebaseImpl.kt */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		667BAE242C47994E00C960EF /* network */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE212C47994E00C960EF /* FirebaseNetworkApi.kt */,
+				667BAE222C47994E00C960EF /* NetworkApi.kt */,
+				667BAE232C47994E00C960EF /* NetworkResult.kt */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		667BAE262C47994E00C960EF /* rooms */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE252C47994E00C960EF /* RoomsProviderApi.kt */,
+			);
+			path = rooms;
+			sourceTree = "<group>";
+		};
+		667BAE2C2C47994E00C960EF /* user */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE272C47994E00C960EF /* GetUserApi.kt */,
+				667BAE282C47994E00C960EF /* UserCacheService.kt */,
+				667BAE292C47994E00C960EF /* UserEntity.kt */,
+				667BAE2A2C47994E00C960EF /* UserHistoryApi.kt */,
+				667BAE2B2C47994E00C960EF /* UserHistoryEntity.kt */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		667BAE312C47994E00C960EF /* work */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE2D2C47994E00C960EF /* CurrentWorkFirebaseApi.kt */,
+				667BAE2E2C47994E00C960EF /* CurrentWorksApi.kt */,
+				667BAE2F2C47994E00C960EF /* WorkAssignApi.kt */,
+				667BAE302C47994E00C960EF /* WorkEntity.kt */,
+			);
+			path = work;
+			sourceTree = "<group>";
+		};
+		667BAE322C47994E00C960EF /* data */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE192C47994E00C960EF /* cache */,
+				667BAE1B2C47994E00C960EF /* imagePicker */,
+				667BAE1D2C47994E00C960EF /* local */,
+				667BAE202C47994E00C960EF /* login */,
+				667BAE242C47994E00C960EF /* network */,
+				667BAE262C47994E00C960EF /* rooms */,
+				667BAE2C2C47994E00C960EF /* user */,
+				667BAE312C47994E00C960EF /* work */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		667BAE342C47994E00C960EF /* di */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE332C47994E00C960EF /* AppModule.kt */,
+			);
+			path = di;
+			sourceTree = "<group>";
+		};
+		667BAE372C47994E00C960EF /* login */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE352C47994E00C960EF /* LoginRepository.kt */,
+				667BAE362C47994E00C960EF /* LoginUseCase.kt */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		667BAE3A2C47994E00C960EF /* rooms */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE382C47994E00C960EF /* RoomsEntityToRoomsMapper.kt */,
+				667BAE392C47994E00C960EF /* RoomsProviderUseCase.kt */,
+			);
+			path = rooms;
+			sourceTree = "<group>";
+		};
+		667BAE422C47994E00C960EF /* user */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE3B2C47994E00C960EF /* User.kt */,
+				667BAE3C2C47994E00C960EF /* UserEntityToUserMapper.kt */,
+				667BAE3D2C47994E00C960EF /* UserMapper.kt */,
+				667BAE3E2C47994E00C960EF /* UserProviderUseCase.kt */,
+				667BAE3F2C47994E00C960EF /* WorkerHistoryUseCase.kt */,
+				667BAE402C47994E00C960EF /* WorkHistory.kt */,
+				667BAE412C47994E00C960EF /* WorksUseCase.kt */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		667BAE432C47994E00C960EF /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE372C47994E00C960EF /* login */,
+				667BAE3A2C47994E00C960EF /* rooms */,
+				667BAE422C47994E00C960EF /* user */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		667BAE462C47994E00C960EF /* addworker */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE442C47994E00C960EF /* AddWorkerScreen.kt */,
+				667BAE452C47994E00C960EF /* AddWorkerViewModel.kt */,
+			);
+			path = addworker;
+			sourceTree = "<group>";
+		};
+		667BAE492C47994E00C960EF /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE472C47994E00C960EF /* LoadingState.kt */,
+				667BAE482C47994E00C960EF /* LoadingView.kt */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		667BAE4B2C47994E00C960EF /* components */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE492C47994E00C960EF /* Loading */,
+				667BAE4A2C47994E00C960EF /* Dialogs.kt */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		667BAE4F2C47994E00C960EF /* login */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE4C2C47994E00C960EF /* Components.kt */,
+				667BAE4D2C47994E00C960EF /* LoginScreen.kt */,
+				667BAE4E2C47994E00C960EF /* LoginViewModel.kt */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		667BAE512C47994E00C960EF /* main */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE502C47994E00C960EF /* App.kt */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		667BAE582C47994E00C960EF /* rooms */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE522C47994E00C960EF /* RoomCardView.kt */,
+				667BAE532C47994E00C960EF /* RoomDetailScreen.kt */,
+				667BAE542C47994E00C960EF /* RoomsScreen.kt */,
+				667BAE552C47994E00C960EF /* RoomViewModel.kt */,
+				667BAE562C47994E00C960EF /* WorkDetailScreen.kt */,
+				667BAE572C47994E00C960EF /* WorkerChooserScreen.kt */,
+			);
+			path = rooms;
+			sourceTree = "<group>";
+		};
+		667BAE5B2C47994E00C960EF /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE592C47994E00C960EF /* SplashView.kt */,
+				667BAE5A2C47994E00C960EF /* SplashViewModel.kt */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		667BAE5E2C47994E00C960EF /* tabs */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE5C2C47994E00C960EF /* CurrentTabState.kt */,
+				667BAE5D2C47994E00C960EF /* Tabs.kt */,
+			);
+			path = tabs;
+			sourceTree = "<group>";
+		};
+		667BAE602C47994E00C960EF /* theme */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE5F2C47994E00C960EF /* Theme.kt */,
+			);
+			path = theme;
+			sourceTree = "<group>";
+		};
+		667BAE6A2C47994E00C960EF /* usersList */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE612C47994E00C960EF /* UserCardView.kt */,
+				667BAE622C47994E00C960EF /* UserProfileScreen.kt */,
+				667BAE632C47994E00C960EF /* UserSelectableView.kt */,
+				667BAE642C47994E00C960EF /* UsersListScreen.kt */,
+				667BAE652C47994E00C960EF /* UsersListState.kt */,
+				667BAE662C47994E00C960EF /* UsersListViewModel.kt */,
+				667BAE672C47994E00C960EF /* WorkerHistoryCardView.kt */,
+				667BAE682C47994E00C960EF /* WorkerHistoryScreen.kt */,
+				667BAE692C47994E00C960EF /* WorkerHistoryViewModel.kt */,
+			);
+			path = usersList;
+			sourceTree = "<group>";
+		};
+		667BAE6D2C47994E00C960EF /* worker */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE6B2C47994E00C960EF /* WorkerScreen.kt */,
+				667BAE6C2C47994E00C960EF /* WorkerScreenViewModel.kt */,
+			);
+			path = worker;
+			sourceTree = "<group>";
+		};
+		667BAE6F2C47994E00C960EF /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE462C47994E00C960EF /* addworker */,
+				667BAE4B2C47994E00C960EF /* components */,
+				667BAE4F2C47994E00C960EF /* login */,
+				667BAE512C47994E00C960EF /* main */,
+				667BAE582C47994E00C960EF /* rooms */,
+				667BAE5B2C47994E00C960EF /* splash */,
+				667BAE5E2C47994E00C960EF /* tabs */,
+				667BAE602C47994E00C960EF /* theme */,
+				667BAE6A2C47994E00C960EF /* usersList */,
+				667BAE6D2C47994E00C960EF /* worker */,
+				667BAE6E2C47994E00C960EF /* Platform.kt */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		667BAE702C47994E00C960EF /* app */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE322C47994E00C960EF /* data */,
+				667BAE342C47994E00C960EF /* di */,
+				667BAE432C47994E00C960EF /* domain */,
+				667BAE6F2C47994E00C960EF /* presentation */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		667BAE762C47994E00C960EF /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE712C47994E00C960EF /* ConstHelper.kt */,
+				667BAE722C47994E00C960EF /* DateTime.kt */,
+				667BAE732C47994E00C960EF /* Extensions.kt */,
+				667BAE742C47994E00C960EF /* Mapper.kt */,
+				667BAE752C47994E00C960EF /* Timer.kt */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		667BAE772C47994E00C960EF /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE702C47994E00C960EF /* app */,
+				667BAE762C47994E00C960EF /* extensions */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		667BAE792C47994E00C960EF /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE782C47994E00C960EF /* compose-multiplatform.xml */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		667BAE7F2C47994E00C960EF /* database */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE7A2C47994E00C960EF /* 1.db */,
+				667BAE7B2C47994E00C960EF /* 1.sqm */,
+				667BAE7C2C47994E00C960EF /* 2.sqm */,
+				667BAE7D2C47994E00C960EF /* 3.sqm */,
+				667BAE7E2C47994E00C960EF /* users.sq */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		667BAE802C47994E00C960EF /* sqldelight */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE7F2C47994E00C960EF /* database */,
+			);
+			path = sqldelight;
+			sourceTree = "<group>";
+		};
+		667BAE812C47994E00C960EF /* commonMain */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE772C47994E00C960EF /* kotlin */,
+				667BAE792C47994E00C960EF /* resources */,
+				667BAE802C47994E00C960EF /* sqldelight */,
+			);
+			name = commonMain;
+			path = ../../composeApp/src/commonMain;
+			sourceTree = "<group>";
+		};
+		667BAE832C47994E00C960EF /* imagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE822C47994E00C960EF /* FileUtils.kt */,
+			);
+			path = imagePicker;
+			sourceTree = "<group>";
+		};
+		667BAE852C47994E00C960EF /* local */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE842C47994E00C960EF /* UserDatabaseDriverFactory.kt */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		667BAE862C47994E00C960EF /* data */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE832C47994E00C960EF /* imagePicker */,
+				667BAE852C47994E00C960EF /* local */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		667BAE892C47994E00C960EF /* di */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE872C47994E00C960EF /* AppModule.kt */,
+				667BAE882C47994E00C960EF /* KoinHelper.kt */,
+			);
+			path = di;
+			sourceTree = "<group>";
+		};
+		667BAE8C2C47994E00C960EF /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE8A2C47994E00C960EF /* MainViewController.kt */,
+				667BAE8B2C47994E00C960EF /* Platform.ios.kt */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		667BAE8D2C47994E00C960EF /* app */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE862C47994E00C960EF /* data */,
+				667BAE892C47994E00C960EF /* di */,
+				667BAE8C2C47994E00C960EF /* presentation */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		667BAE8F2C47994E00C960EF /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE8E2C47994E00C960EF /* DateTime.kt */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		667BAE902C47994E00C960EF /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE8D2C47994E00C960EF /* app */,
+				667BAE8F2C47994E00C960EF /* extensions */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		667BAE912C47994E00C960EF /* iosMain */ = {
+			isa = PBXGroup;
+			children = (
+				667BAE902C47994E00C960EF /* kotlin */,
+			);
+			name = iosMain;
+			path = ../../composeApp/src/iosMain;
+			sourceTree = "<group>";
+		};
+		7555FF72242A565900829871 = {
+			isa = PBXGroup;
+			children = (
+				667BAE172C47993B00C960EF /* Kotlin Debug */,
+				AB1DB47929225F7C00F7AF9C /* Configuration */,
+				7555FF7D242A565900829871 /* iosApp */,
+				7555FF7C242A565900829871 /* Products */,
+				42799AB246E5F90AF97AA0EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7555FF7C242A565900829871 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7555FF7B242A565900829871 /* BusinessManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7555FF7D242A565900829871 /* iosApp */ = {
+			isa = PBXGroup;
+			children = (
+				667BAEE22C479BE200C960EF /* GoogleService-Info.plist */,
+				0D3D5B1B2B514DA3007F578E /* iosApp.entitlements */,
+				058557BA273AAA24004C7B11 /* Assets.xcassets */,
+				7555FF82242A565900829871 /* ContentView.swift */,
+				7555FF8C242A565B00829871 /* Info.plist */,
+				2152FB032600AC8F00CF470E /* iOSApp.swift */,
+				058557D7273AAEEB004C7B11 /* Preview Content */,
+			);
+			path = iosApp;
+			sourceTree = "<group>";
+		};
+		AB1DB47929225F7C00F7AF9C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				AB3632DC29227652001CCB65 /* Config.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7555FF7A242A565900829871 /* iosApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7555FFA5242A565B00829871 /* Build configuration list for PBXNativeTarget "iosApp" */;
+			buildPhases = (
+				F36B1CEB2AD83DDC00CB74D5 /* Compile Kotlin Framework */,
+				7555FF77242A565900829871 /* Sources */,
+				7555FF79242A565900829871 /* Resources */,
+				0D2F80D42B36EFD400CB39BF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iosApp;
+			packageProductDependencies = (
+				0D2F80D52B36EFDC00CB39BF /* FirebaseFirestore */,
+				0D2F80D72B36EFE000CB39BF /* FirebaseAuth */,
+				0D9F279A2B50341300F02337 /* FirebaseFunctions */,
+				0D9F279C2B50342200F02337 /* FirebaseDatabase */,
+				0D9F27A02B5038C900F02337 /* FirebaseAnalytics */,
+				0D283CCC2B657FC100718A7C /* FirebaseMessaging */,
+				0DA5095D2B6B04340056B343 /* FirebaseStorage */,
+			);
+			productName = iosApp;
+			productReference = 7555FF7B242A565900829871 /* BusinessManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7555FF73242A565900829871 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = orgName;
+				TargetAttributes = {
+					7555FF7A242A565900829871 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 7555FF76242A565900829871 /* Build configuration list for PBXProject "iosApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7555FF72242A565900829871;
+			packageReferences = (
+				0D2F80CE2B36EFAC00CB39BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 7555FF7C242A565900829871 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7555FF7A242A565900829871 /* iosApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7555FF79242A565900829871 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667BAEC62C47994E00C960EF /* UserSelectableView.kt in Resources */,
+				667BAEC72C47994E00C960EF /* UsersListScreen.kt in Resources */,
+				667BAECC2C47994E00C960EF /* WorkerHistoryViewModel.kt in Resources */,
+				667BAEDC2C47994E00C960EF /* UserDatabaseDriverFactory.kt in Resources */,
+				667BAEA52C47994E00C960EF /* LoginRepository.kt in Resources */,
+				667BAEC32C47994E00C960EF /* Theme.kt in Resources */,
+				667BAEAA2C47994E00C960EF /* UserEntityToUserMapper.kt in Resources */,
+				667BAED32C47994E00C960EF /* Mapper.kt in Resources */,
+				667BAE972C47994E00C960EF /* FirebaseNetworkApi.kt in Resources */,
+				667BAEBA2C47994E00C960EF /* RoomDetailScreen.kt in Resources */,
+				667BAEB82C47994E00C960EF /* App.kt in Resources */,
+				667BAED92C47994E00C960EF /* 3.sqm in Resources */,
+				667BAEC82C47994E00C960EF /* UsersListState.kt in Resources */,
+				667BAECE2C47994E00C960EF /* WorkerScreenViewModel.kt in Resources */,
+				667BAEB62C47994E00C960EF /* LoginScreen.kt in Resources */,
+				667BAE982C47994E00C960EF /* NetworkApi.kt in Resources */,
+				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
+				667BAEA72C47994E00C960EF /* RoomsEntityToRoomsMapper.kt in Resources */,
+				667BAE962C47994E00C960EF /* LoginApiFirebaseImpl.kt in Resources */,
+				667BAEB12C47994E00C960EF /* AddWorkerViewModel.kt in Resources */,
+				667BAEE12C47994E00C960EF /* DateTime.kt in Resources */,
+				667BAEB92C47994E00C960EF /* RoomCardView.kt in Resources */,
+				667BAEA62C47994E00C960EF /* LoginUseCase.kt in Resources */,
+				667BAEBF2C47994E00C960EF /* SplashView.kt in Resources */,
+				667BAE922C47994E00C960EF /* CacheService.kt in Resources */,
+				667BAEC52C47994E00C960EF /* UserProfileScreen.kt in Resources */,
+				667BAEB02C47994E00C960EF /* AddWorkerScreen.kt in Resources */,
+				667BAEDF2C47994E00C960EF /* MainViewController.kt in Resources */,
+				667BAED42C47994E00C960EF /* Timer.kt in Resources */,
+				667BAEA92C47994E00C960EF /* User.kt in Resources */,
+				667BAEB32C47994E00C960EF /* LoadingView.kt in Resources */,
+				667BAE9C2C47994E00C960EF /* UserCacheService.kt in Resources */,
+				667BAEC02C47994E00C960EF /* SplashViewModel.kt in Resources */,
+				667BAECB2C47994E00C960EF /* WorkerHistoryScreen.kt in Resources */,
+				667BAED52C47994E00C960EF /* compose-multiplatform.xml in Resources */,
+				667BAECF2C47994E00C960EF /* Platform.kt in Resources */,
+				667BAECD2C47994E00C960EF /* WorkerScreen.kt in Resources */,
+				667BAEC12C47994E00C960EF /* CurrentTabState.kt in Resources */,
+				667BAED22C47994E00C960EF /* Extensions.kt in Resources */,
+				667BAEBB2C47994E00C960EF /* RoomsScreen.kt in Resources */,
+				667BAEA42C47994E00C960EF /* AppModule.kt in Resources */,
+				667BAEDE2C47994E00C960EF /* KoinHelper.kt in Resources */,
+				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
+				667BAE9E2C47994E00C960EF /* UserHistoryApi.kt in Resources */,
+				667BAEDB2C47994E00C960EF /* FileUtils.kt in Resources */,
+				667BAED72C47994E00C960EF /* 1.sqm in Resources */,
+				667BAEDA2C47994E00C960EF /* users.sq in Resources */,
+				667BAEAE2C47994E00C960EF /* WorkHistory.kt in Resources */,
+				667BAEAF2C47994E00C960EF /* WorksUseCase.kt in Resources */,
+				667BAEA82C47994E00C960EF /* RoomsProviderUseCase.kt in Resources */,
+				667BAE952C47994E00C960EF /* LoginApi.kt in Resources */,
+				667BAEBD2C47994E00C960EF /* WorkDetailScreen.kt in Resources */,
+				667BAE9A2C47994E00C960EF /* RoomsProviderApi.kt in Resources */,
+				667BAE9B2C47994E00C960EF /* GetUserApi.kt in Resources */,
+				667BAEC22C47994E00C960EF /* Tabs.kt in Resources */,
+				667BAEE02C47994E00C960EF /* Platform.ios.kt in Resources */,
+				667BAE9D2C47994E00C960EF /* UserEntity.kt in Resources */,
+				667BAEBE2C47994E00C960EF /* WorkerChooserScreen.kt in Resources */,
+				667BAECA2C47994E00C960EF /* WorkerHistoryCardView.kt in Resources */,
+				667BAEB42C47994E00C960EF /* Dialogs.kt in Resources */,
+				667BAE992C47994E00C960EF /* NetworkResult.kt in Resources */,
+				667BAED02C47994E00C960EF /* ConstHelper.kt in Resources */,
+				667BAEC92C47994E00C960EF /* UsersListViewModel.kt in Resources */,
+				667BAEAB2C47994E00C960EF /* UserMapper.kt in Resources */,
+				667BAEB72C47994E00C960EF /* LoginViewModel.kt in Resources */,
+				667BAEBC2C47994E00C960EF /* RoomViewModel.kt in Resources */,
+				667BAEAD2C47994E00C960EF /* WorkerHistoryUseCase.kt in Resources */,
+				667BAEE32C479BE200C960EF /* GoogleService-Info.plist in Resources */,
+				667BAE9F2C47994E00C960EF /* UserHistoryEntity.kt in Resources */,
+				667BAEA02C47994E00C960EF /* CurrentWorkFirebaseApi.kt in Resources */,
+				667BAEB22C47994E00C960EF /* LoadingState.kt in Resources */,
+				667BAED62C47994E00C960EF /* 1.db in Resources */,
+				667BAEC42C47994E00C960EF /* UserCardView.kt in Resources */,
+				667BAEAC2C47994E00C960EF /* UserProviderUseCase.kt in Resources */,
+				667BAEA32C47994E00C960EF /* WorkEntity.kt in Resources */,
+				667BAEA12C47994E00C960EF /* CurrentWorksApi.kt in Resources */,
+				667BAEB52C47994E00C960EF /* Components.kt in Resources */,
+				667BAED82C47994E00C960EF /* 2.sqm in Resources */,
+				667BAEA22C47994E00C960EF /* WorkAssignApi.kt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F36B1CEB2AD83DDC00CB74D5 /* Compile Kotlin Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Kotlin Framework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"YES\" = \"$OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED\" ]; then\n  echo \"Skipping Gradle build task invocation due to OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED environment variable set to \\\"YES\\\"\"\n  exit 0\nfi\ncd \"$SRCROOT/..\"\n./gradlew :composeApp:embedAndSignAppleFrameworkForXcode\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7555FF77242A565900829871 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7555FFA3242A565B00829871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB3632DC29227652001CCB65 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7555FFA4242A565B00829871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB3632DC29227652001CCB65 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7555FFA6242A565B00829871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iosApp/iosApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
+				DEVELOPMENT_TEAM = SRS4ZYX9NV;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)\n$(SRCROOT)/../composeApp/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				);
+				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					composeApp,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${BUNDLE_ID}${TEAM_ID}";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = am.israel.ori;
+				PRODUCT_NAME = "${APP_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7555FFA7242A565B00829871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iosApp/iosApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
+				DEVELOPMENT_TEAM = SRS4ZYX9NV;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)\n$(SRCROOT)/../composeApp/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				);
+				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					composeApp,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${BUNDLE_ID}${TEAM_ID}";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = am.israel.ori;
+				PRODUCT_NAME = "${APP_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7555FF76242A565900829871 /* Build configuration list for PBXProject "iosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7555FFA3242A565B00829871 /* Debug */,
+				7555FFA4242A565B00829871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7555FFA5242A565B00829871 /* Build configuration list for PBXNativeTarget "iosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7555FFA6242A565B00829871 /* Debug */,
+				7555FFA7242A565B00829871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0D2F80CE2B36EFAC00CB39BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.19.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D283CCC2B657FC100718A7C /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D2F80CE2B36EFAC00CB39BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		0D2F80D52B36EFDC00CB39BF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D2F80CE2B36EFAC00CB39BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		0D2F80D72B36EFE000CB39BF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D2F80CE2B36EFAC00CB39BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0D9F279A2B50341300F02337 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D2F80CE2B36EFAC00CB39BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		0D9F279C2B50342200F02337 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D2F80CE2B36EFAC00CB39BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		0D9F27A02B5038C900F02337 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D2F80CE2B36EFAC00CB39BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		0DA5095D2B6B04340056B343 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D2F80CE2B36EFAC00CB39BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7555FF73242A565900829871 /* Project object */;
+}

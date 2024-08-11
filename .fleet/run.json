@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "android-app",
+            "name": "Android-app configuration",
+            "module": "BusinessManager.composeApp.main",
+        },
+        {
+            "type": "xcode-app",
+            "name": "Xcode-app configuration",
+            "buildTarget": {
+                "project": "iosApp",
+                "target": "iosApp",
+            },
+            "configuration": "Debug",
+        },
+        {
+            "type": "gradle",
+            "name": "Gradle configuration",
+            "tasks": [
+                "run"
+            ]
+        }
+    ]
+}
